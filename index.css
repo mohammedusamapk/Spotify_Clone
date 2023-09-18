@@ -1,0 +1,911 @@
+:root {
+  --black: #000;
+  --grey: #121212;
+  --light-grey: #232323;
+  --white: #fff;
+}
+
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  background-color: var(--black);
+  padding: 0.6rem;
+}
+
+.sidebar {
+  flex: 0.34;
+  background-color: var(--black);
+  margin-right: 0.6rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.main-bar {
+  flex: 0.8;
+  background-image: linear-gradient(#242323, #0d0d0d);
+  overflow-y: auto;
+  border-radius: 0.5rem;
+
+}
+
+
+.top-icons img {
+  filter: invert(1);
+}
+
+.top-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--grey);
+  margin-bottom: 0.6rem;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.link-flex {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+  opacity: 0.7;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding-left: 1rem
+}
+
+#logo {
+  filter: invert(1);
+  opacity: 1;
+}
+
+.link-flex img {
+  height: 2rem;
+}
+
+.link-flex:hover {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.link-flex p {
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+.library {
+  background-color: var(--grey);
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  flex: 3;
+  position: relative;
+  height: 80vh;
+
+
+}
+
+.library img {
+  filter: invert(1);
+
+}
+
+.flex-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 20vh;
+  overflow-y: auto;
+  flex: 3;
+}
+
+.playlist::-webkit-scrollbar {
+  background: none;
+
+}
+
+.playlist1 {
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  background-color: var(--light-grey);
+}
+
+.playlist1 button {
+  background-color: white;
+  text-align: center;
+  border-radius: 100px;
+  padding: 10px 20px 10px 20px;
+  font-size: 18px;
+  margin-left: 20px;
+  font-weight: bolder;
+  border: none;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+
+}
+
+.footer {
+  padding-right: 2rem;
+  position: relative;
+  left: 1rem;
+  top: 2rem;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+#cookies:hover {
+  text-decoration: underline;
+}
+
+#language img {
+
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+}
+
+#language {
+  opacity: 10;
+  border: 0.5px solid white;
+  width: 120px;
+  height: 2.5rem;
+  position: relative;
+  top: 40px;
+  left: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 30px;
+  transition: all;
+}
+
+#language:hover {
+  border: 2px solid white;
+  transform: scale(1.05);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0rem;
+  align-items: center;
+  background-color: rgba(10, 10, 10, 0.5);
+  z-index: 1000;
+  height: 3rem;
+}
+
+.arrow {
+  display: flex;
+}
+
+.navbar img {
+  display: flex;
+  left: 0.8rem;
+  filter: invert(1);
+  height: 1.5rem;
+  opacity: 0.7;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 100px;
+}
+
+.log {
+  display: flex;
+  margin-right: 1.8rem;
+}
+
+.log button {
+  opacity: var(--white);
+  height: 3.8rem;
+  width: 8.5rem;
+  margin: auto;
+  border-style: none;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+  padding-right: 1rem;
+}
+
+.log p:hover {
+  transform: scale(1.03);
+}
+
+.log button:hover {
+  transform: scale(1.03);
+}
+
+.cards-bar {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-evenly;
+
+}
+
+.cards-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.cards-heading h3 {
+  opacity: 0.7;
+}
+
+.cards-heading h1:hover {
+  text-decoration: underline;
+}
+
+.cards-heading h3:hover {
+  text-decoration: underline;
+}
+
+.cards {
+  width: 175px;
+  background-image: linear-gradient(#121212, #232323, #232323);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.cards:hover {
+  background-image: linear-gradient(#1c1c1c, #323232);
+
+}
+
+.cards-img {
+  width: 100%;
+  height: 26vh;
+  border-radius: 0.35rem;
+}
+
+.cards-heading2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.main-footer {
+  display: flex;
+
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 40px;
+}
+
+.company p {
+  font-size: 1.5rem;
+}
+
+.company a {
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+
+.communities {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.communities p {
+  font-size: 1.5rem;
+}
+
+.communities a {
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+
+.main-footer a:hover {
+  text-decoration: underline;
+}
+
+.mediaicon img {
+  height: 1.7rem;
+  filter: invert(1);
+  background-color: rgb(214, 211, 211);
+  padding: 1rem;
+  margin: 0.7rem;
+  border-radius: 20px;
+}
+
+.mediaicon img:hover {
+  background-color: rgb(181, 179, 179);
+}
+
+.socialmedia {
+  display: flex;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+.usefullink {
+  margin-top: 100px;
+
+}
+
+.border-bottom {
+  border-bottom: 0.2px solid white;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 4rem;
+  opacity: 0.2;
+}
+
+.sign {
+  font-size: 2rem;
+  font-style: italic;
+  margin: 5rem;
+}
+
+.logo1 {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  display: none;
+}
+
+.logo1 i {
+  color: white;
+  font-size: 40px;
+}
+
+.logo1 span {
+  font-size: 25px;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.log1 {
+  display: none;
+}
+
+.btn1 {
+  display: none;
+}
+
+.log2 {
+  display: none;
+}
+@media(max-width:1150px) {
+  .cards {
+    width: 130px;
+  }
+
+  .socialmedia {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 77px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+
+  .cards {
+    height: 45vh;
+  }
+
+  .cards h2 {
+    font-size: 1.1rem;
+  }
+
+  .cards p {
+    font-size: 0.8rem;
+  }
+
+  .playlist1 button {
+    font-size: 16px;
+  }
+
+  .playlist1 h2 {
+    font-size: 1.4rem;
+  }
+
+  #language {
+    display: none;
+  }
+}
+
+@media(max-width:1100px) {
+  .cards {
+    width: 130px;
+  }
+
+  .socialmedia {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 37px;
+  }
+
+  .footer {
+    font-size: 11px;
+  }
+
+  .usefullink {
+    margin-top: 80px;
+  }
+
+  .playlist1 h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media(max-width:1050px) {
+ 
+  .company a {
+    font-size: 1rem;
+  }
+
+  .communities a {
+    font-size: 1rem;
+  }
+
+  .company {
+    margin-left: 30px;
+  }
+
+  .playlist1 h2 {
+    font-size: 1.2rem;
+  }
+
+  .playlist1 h3 {
+    font-size: 1rem;
+  }
+
+  .usefullink {
+    margin-top: 70px;
+  }
+}
+
+@media(max-width:1000px) {
+  .cards {
+    width: 115px;
+    height: 43vh;
+  }
+
+  .cards h2 {
+    font-size: 1.1rem;
+  }
+
+  .cards p {
+    font-size: 0.8rem;
+  }
+
+  .usefullink {
+    margin-top: 60px;
+  }
+
+  .footer {
+    font-size: 10px;
+  }
+
+  .playlist1 h2 {
+    font-size: 1.1rem;
+  }
+
+  .playlist1 h3 {
+    font-size: 0.9rem;
+  }
+
+  .mediaicon img {
+    padding: 0.8rem;
+  }
+
+  .communities {
+    margin-left: 90px;
+  }
+}
+
+@media(max-width:950px) {
+  .cards {
+    width: 115px;
+    height: 40vh;
+  }
+
+  .cards h2 {
+    font-size: 1rem;
+  }
+
+  .cards p {
+    font-size: 0.6rem;
+  }
+
+  .cards-heading h1 {
+    font-size: 1.5rem;
+  }
+
+  .mediaicon img {
+    height: 1.5rem;
+  }
+
+  .company p {
+    font-size: 1.3rem;
+  }
+
+  .communities p {
+    font-size: 1.3rem;
+  }
+
+  .link-flex {
+    font-size: 1rem;
+  }
+
+  .log button {
+    margin-top: 0.3rem;
+    height: 3rem;
+    width: 7rem;
+  }
+
+  .link-flex p {
+    font-size: 1rem;
+  }
+
+  .footer {
+    font-size: 10px;
+  }
+
+  .footer {
+    padding-right: 1rem;
+    position: relative;
+    left: 0.5rem;
+    top: 1rem;
+  }
+
+  .usefullink {
+    margin-top: 50px;
+  }
+
+  .communities {
+    margin-left: 69px;
+  }
+
+  .sign {
+    font-size: 1.5rem;
+    margin: 2rem;
+    text-align: center;
+  }
+
+  .playlist1 button {
+    font-size: 13px;
+  }
+
+  .playlist1 h2 {
+    font-size: 1rem;
+  }
+}
+
+@media(max-width:900px) {
+  .cards {
+    width: 100px;
+    height: 35vh;
+  }
+
+  .cards-img {
+    height: 20vh;
+  }
+
+  .cards h2 {
+    font-size: 0.9rem;
+  }
+
+  .playlist1 h2 {
+    font-size: 0.9rem;
+  }
+
+  .playlist1 h3 {
+    font-size: 0.7rem;
+  }
+
+  .mediaicon img {
+    padding: 0.8rem;
+    margin: 0.5rem;
+  }
+}
+
+@media(max-width:850px) {
+  .cards {
+    width: 85px;
+    height: 30vh;
+  }
+
+  .cards h2 {
+    font-size: 0.7rem;
+  }
+
+  .communities {
+    margin-left: 55px;
+  }
+
+  .playlist1 button {
+    font-size: 12px;
+  }
+
+  .link-flex img {
+    height: 1.5rem;
+  }
+
+  .mediaicon img {
+    padding: 0.7rem;
+    margin: 0.5rem;
+  }
+
+  .company p {
+    font-size: 1.1rem;
+  }
+
+  .communities p {
+    font-size: 1.1rem;
+  }
+
+  .company a {
+    font-size: 0.8rem;
+  }
+
+  .communities a {
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    padding-right: 1rem;
+    position: relative;
+    left: 0.5rem;
+    top: 2rem;
+  }
+}
+
+@media(max-width:800px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main-bar {
+    width: 100;
+    flex: 1;
+    background-image: none;
+    background-color: #0a0a0a;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .navbar {
+    background-color: #000;
+  }
+
+  .arrow img {
+    display: none;
+  }
+
+  .main-footer {
+    display: none;
+  }
+
+  .sign {
+    display: none;
+  }
+
+  .border-bottom {
+    display: none;
+  }
+
+  .logo1 {
+    display: block;
+    display: flex;
+  }
+
+  .log {
+    display: none;
+  }
+
+  .log1 {
+    display: block;
+    font-size: 25px;
+    position: relative;
+    left: 40px;
+  }
+
+  .btn1 {
+    display: block;
+    padding: 15px 15px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  .log2 {
+    display: block;
+    font-size: 25px;
+    position: relative;
+    right: 40px;
+  }
+
+  .cards-bar {
+    overflow-x: scroll;
+    margin: 20px;
+  }
+
+  .cards img {
+    width: 85px;
+  }
+}
+
+@media(max-width:550px) {
+  .log1 {
+    display: block;
+    font-size: 20px;
+    position: relative;
+    left: 20px;
+  }
+
+  .btn1 {
+    display: block;
+    padding: 15px 15px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .log2 {
+    display: block;
+    font-size: 20px;
+    position: relative;
+    right: 20px;
+  }
+
+  .cards {
+    background-image: none;
+    width: 90px;
+    padding: 0;
+    height: 33vh;
+
+  }
+}
+
+@media(max-width:450px) {
+  .cards-heading {
+    margin-left: 1rem;
+  }
+
+  .cards-heading h1 {
+    font-size: 1rem;
+  }
+
+  .logo1 i {
+    font-size: 30px;
+  }
+
+  .logo1 span {
+    font-size: 17px;
+    padding-left: 5px;
+  }
+
+  .btn1 {
+    width: 90px;
+    padding: 10px 20px;
+    font-size: 11px;
+
+  }
+
+  .navbar {
+    height: 2rem;
+  }
+
+  .cards p {
+    display: none;
+  }
+
+  .cards-heading h3 {
+    display: none;
+  }
+}
+
+@media(max-width:400px) {
+  .log1 i {
+    font-size: 15px;
+    position: relative;
+    right: 20px;
+  }
+
+  .log2 i {
+    font-size: 15px;
+  }
+
+  .btn1 {
+    width: 70px;
+    padding: 10px 20px;
+    font-size: 11px;
+    position: relative;
+    right: 10px;
+  }
+
+  .cards-bar {
+    gap: 4rem;
+  }
+
+  .cards {
+    width: 22px;
+    height: 25vh;
+  }
+
+  .cards img {
+    height: 15vh;
+  }
+
+  .cards h2 {
+    font-size: 10px;
+    width: max-content;
+  }
+
+  .cards-bar::-webkit-scrollbar {
+    background: none;
+
+  }
+}
+
+@media(max-width:400px) {
+  .cards-bar {
+    margin: 0px;
+  }
+
+  .cards {
+    width: 15px;
+  }
+
+  .cards img {
+    width: 77px;
+  }
+
+  .btn1 {
+    width: 63px;
+    padding: 4px 8px;
+    font-size: 10px;
+    position: relative;
+    right: 10px;
+  }
+}
